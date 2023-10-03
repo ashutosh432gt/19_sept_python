@@ -1,12 +1,12 @@
 
 name=input("Enter Your Name :- ")
 age=int(input("Enter Your age :- "))
-gender=int(input("If you are male select 1 and if you are female select 2 : "))
+gender=input("Enter your gender Male/Female :- ")
 product_name=input("Enter Product name :- ")
 product_weight=int(input("Enter product weight in grams :- "))
 current_gold_price=int(input("Enter current gold price per grams :- "))
 purchase_value=current_gold_price * product_weight
-
+gender="male","Male","Female","female"
 making_charges=845  #making charges per gram
 x=200000 
 y=300000
@@ -16,7 +16,7 @@ total_amount=purchase_value + total_making_charges
 a=purchase_value/100
 print()
 #conditional statement applied if the user's gender is male
-if gender==1:
+if gender=="male" or gender=="Male":
     #condtional statement for male user if thier age is above 65 (nested)
     if age>65:
         #conditional statement if the total amount of purchase is between 2 Lakh and 3 Lakh
@@ -124,7 +124,7 @@ if gender==1:
             print("                            -----------------")
             print("Total Net Amount             = INR ",total_amount - 0 )
 #conditional statement applied if the user's gender is Female        
-else: 
+elif gender=="Female" or gender=="female": 
     #condtional statement for Female user if thier age is above 65 (nested)
     if age>65: 
         #conditional statement if the total amount of purchase is between 2 Lakh and 3 Lakh                  
@@ -232,4 +232,8 @@ else:
             print("Total amount                 = INR ",total_amount)
             print("Discount  0%                 - INR     0")
             print("                            -----------------")
-            print("Total Net Amount             = INR ",total_amount - 0 )                
+            print("Total Net Amount             = INR ",total_amount - 0 )     
+            
+else:
+    print()
+    print("Invalid Input.Please choose gender between Male/Female")                       
