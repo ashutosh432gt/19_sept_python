@@ -1,4 +1,5 @@
-
+print("------------------Welcome To Kalyan Jewellers------------------")
+print()
 name=input("Enter Your Name :- ")
 age=int(input("Enter Your age :- "))
 gender=input("Enter your gender Male/Female :- ")
@@ -6,7 +7,6 @@ product_name=input("Enter Product name :- ")
 product_weight=int(input("Enter product weight in grams :- "))
 current_gold_price=int(input("Enter current gold price per grams :- "))
 purchase_value=current_gold_price * product_weight
-gender="male","Male","Female","female"
 making_charges=845  #making charges per gram
 x=200000 
 y=300000
