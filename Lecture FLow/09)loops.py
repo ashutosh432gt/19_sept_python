@@ -141,7 +141,7 @@ while i<=5: #condition
     
 #example 2
 
-'''status:True
+'''status=True
 
 while status:
     name=input("Enter your name :- ")
@@ -151,17 +151,18 @@ while status:
     if choice=='y' or choice=='Y' or choice=='Yes' :
         status:True
     else:
-        status=False    '''
+        status=False '''   
              
 #example 3 number guessing games
 
-'''import random
+import random
 
 status=True
 
-com = random.randint(1,100)
+com = random.randint(1,10)
 
 while status:
+    
   user= int(input("Enter your guess :- "))
   if   user > com :
         print("Hint: Guess lower Number")
@@ -171,5 +172,6 @@ while status:
 
   else:
         print("Right guess")     
-        status:False'''
+
+status:False
           
