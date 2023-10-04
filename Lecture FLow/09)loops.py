@@ -153,7 +153,7 @@ while status:
     else:
         status=False    '''
              
-#example 3
+#example 3 number guessing games
 
 '''import random
 
