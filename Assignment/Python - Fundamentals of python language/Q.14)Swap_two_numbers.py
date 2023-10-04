@@ -1,6 +1,6 @@
 #Write python program that swap two number with temp variable and
 #without temp variable
-print("Without using temp variable")
+print("Swapping Two Numbers Without using temp variable")
 a=10
 b=20
 
@@ -10,7 +10,7 @@ print(a)
 print(b)
 
 print()
-print("With using temp variable")
+print("Swapping Two Numbers With using temp variable")
 c=5
 d=9
 

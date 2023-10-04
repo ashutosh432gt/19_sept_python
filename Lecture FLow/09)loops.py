@@ -103,22 +103,73 @@ print("Odd sum : ",o_sum)    '''
 
 #example 14 pattern
 
-for row in range(1,6):
+'''for row in range(1,6):
     for col in range (1,row+1):
         if row%2==0:
             print(" 0 ",end=" ")
         else:
             print(" 1 ",end=" ")
-    print()    
+    print()   ''' 
     
 #example 15
 
-for row in range (1,6):
+'''for row in range (1,6):
     for col in range(1,row+1):
         if col%2==0:
             print(" 0 ",end=" ")
         else:
             print(" 1 ",end=" ")
-    print()              
-                    
+    print() '''             
+                  
+                  
+#While loop - entry controlled loop
+#syntax:-
+
+'''initlization
+   while condition
+     statement
+     updation                    
+    '''
     
+    
+#example 1    
+
+'''i=1 #intitlization
+while i<=5: #condition
+    print(i)
+    i+=1 #updation'''
+    
+#example 2
+
+'''status:True
+
+while status:
+    name=input("Enter your name :- ")
+    
+    choice = input("Do you want to add more students name : press 'y' for yes and press 'n' for no :- ")
+    
+    if choice=='y' or choice=='Y' or choice=='Yes' :
+        status:True
+    else:
+        status=False    '''
+             
+#example 3
+
+'''import random
+
+status=True
+
+com = random.randint(1,100)
+
+while status:
+  user= int(input("Enter your guess :- "))
+  if   user > com :
+        print("Hint: Guess lower Number")
+
+  elif user < com :
+         print("Hint: Guess upper number")   
+
+  else:
+        print("Right guess")     
+        status:False'''
+          
