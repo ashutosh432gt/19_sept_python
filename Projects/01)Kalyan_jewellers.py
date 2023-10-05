@@ -1,9 +1,9 @@
 print("------------------Welcome To Kalyan Jewellers------------------")
 print()
 name=input("Enter Your Name :- ")
-gender=input("Enter your gender Male/Female :- ")
+gender=input("Enter your gender Male/Female :- ").upper()
 age=int(input("Enter Your age :- "))
-#declaring variable for calculation of final bil
+#declaring variable for calculation of final bill
 purchase_value1=0  
 total_purchase=0
 total_amount1=0
@@ -26,7 +26,7 @@ while status:    #Applying entry condition to run this loop repeatedly
     
     print()
     #conditional statement applied if the user's gender is male
-    if gender=="male" or gender=="Male":
+    if gender=="male" or gender=="M":
         #condtional statement for male user if thier age is above 65 (nested)
         if age>65:
             #conditional statement if the total amount of purchase is between 2 Lakh and 3 Lakh
