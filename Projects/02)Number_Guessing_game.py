@@ -12,10 +12,13 @@ print()
 print("-----------------Game Rules-----------------")
 print("1.You will be given limited attempts to guess the right number in each level")
 print("2.You will be having two lifelines")
+print("3.After redeeming Lifeline game will restart from level 1")
 print()
 while status:
     #limiting the attempt of user to 5
     for i in range(1, 6): 
+        print("---------------Level 1---------------")
+        print("Guess Number between 1 to 10")
         user = int(input("Guess a Number :- "))
         #if users guess is greater than random number picked by computer
         if user > com:
@@ -32,6 +35,7 @@ while status:
             print("Now you have 4 attempts to clear Level 2")
             #limiting for the second level (nested loop)
             for j in range(1, 5):
+                print("Guess Number between 1 to 15")
                 user = int(input("Guess a Number :- "))
                 #if users guess is greater than random number picked by computer
                 if user > com1:
@@ -48,6 +52,7 @@ while status:
                     print("Now you have 2 attempts to clear Level 3")
 
                     for k in range(1, 3):
+                        print("Guess Number between 1 to 10")
                         user = int(input("Enter your guess: "))
                         #if users guess is greater than random number picked by computer
                         if user > com2:
