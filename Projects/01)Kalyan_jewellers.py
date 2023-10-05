@@ -9,7 +9,7 @@ total_purchase=0
 total_amount1=0
 total_making_charges1=0
 discount1=0
-status=True      #Declaring variable for running loop or we can call it intitlization
+status=True      #Declaring variable for entry validation loop or we can call it intitlization
 while status:    #Applying entry condition to run this loop repeatedly
 
     product_name=input("Enter Product name :- ")

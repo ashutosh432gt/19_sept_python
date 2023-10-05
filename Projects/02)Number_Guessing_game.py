@@ -16,8 +16,8 @@ print("3.After redeeming Lifeline game will restart from level 1")
 print()
 while status:
     #limiting the attempt of user to 5
+    print("---------------Level 1---------------")
     for i in range(1, 6): 
-        print("---------------Level 1---------------")
         print("Guess Number between 1 to 10")
         user = int(input("Guess a Number :- "))
         #if users guess is greater than random number picked by computer
@@ -80,13 +80,16 @@ while status:
             print(f"You have {lifelines} lifelines left.")
             if i == 5:
                 print("The correct guess for Level 1 = ",com)
+                print("Game is restarting from level 1")
             elif j == 4:
                 print("The correct answer for Level 2 = ",com1)
-            else:
+                print("Game is restarting from level 1")
+            elif k==3:
                 print("The correct answer for Level 3 = ",com2)
-                
-        status=True #if the users redeem's lifeline the loop runs again
-        continue #to let the loop keep
+                print("Game is restarting from level 1")
+        
+            status=True #if the users redeem's lifeline the loop runs again
+            continue #to let the loop keep
     #condition if the user loose all lifelines and attempt
     if i == 5:
         print("Better Luck Next Time!")
