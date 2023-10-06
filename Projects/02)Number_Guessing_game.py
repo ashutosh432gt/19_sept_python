@@ -52,7 +52,7 @@ while status:
                     print("Now you have 2 attempts to clear Level 3")
 
                     for k in range(1, 3):
-                        print("Guess Number between 1 to 10")
+                        print("Guess Number between 1 to 20")
                         user = int(input("Enter your guess: "))
                         #if users guess is greater than random number picked by computer
                         if user > com2:
@@ -75,7 +75,7 @@ while status:
     #conditional statement to end the loop
     if lifelines > 0:
         use_lifeline = input("Redeem lifeline? (yes/no): ").upper()
-        if use_lifeline == "YES":
+        if use_lifeline == "YES" or "Y":
             lifelines -= 1
             print(f"You have {lifelines} lifelines left.")
             if i == 5:
@@ -92,12 +92,12 @@ while status:
             continue #to let the loop keep
     #condition if the user loose all lifelines and attempt
     if i == 5:
+        print("No Lifelines remaining")
         print("Better Luck Next Time!")
-        print("No lifelines remaining")
     elif j == 4:
+        print("No Lifelines remaining")
         print("Better Luck Next Time!")
-        print("No lifelines remaining")
     elif k == 3:
+        print("No Lifelines remaining")
         print("Better Luck Next Time!")
-        print("No lifelines remaining")
     status = False
