@@ -4,9 +4,6 @@ import random  #importing random module to pick random numbers
 
 status = True #initlization for validation of users entry
 
-com = random.randint(1, 10)  #to pick random numbers between 1 to 10
-com1 = random.randint(1, 15) #to pick random numbers between 1 to 15
-com2 = random.randint(1, 20) #to pick random numbers between 1 to 20
 lifelines=2 #users can use three lifelines to get hint and continue the level
 print()
 print("-----------------Game Rules-----------------")
@@ -15,6 +12,9 @@ print("2.You will be having two lifelines")
 print("3.After redeeming Lifeline game will restart from level 1")
 print()
 while status:
+    com = random.randint(1, 10)  #to pick random numbers between 1 to 10
+    com1 = random.randint(1, 15) #to pick random numbers between 1 to 15
+    com2 = random.randint(1, 20) #to pick random numbers between 1 to 20
     #limiting the attempt of user to 5
     print("---------------Level 1---------------")
     for i in range(1, 6): 
@@ -84,12 +84,14 @@ while status:
             elif j == 4:
                 print("The correct answer for Level 2 = ",com1)
                 print("Game is restarting from level 1")
-            elif k==3:
+            else:
                 print("The correct answer for Level 3 = ",com2)
                 print("Game is restarting from level 1")
         
             status=True #if the users redeem's lifeline the loop runs again
             continue #to let the loop keep
+        else:
+            print("Game is over")
     #condition if the user loose all lifelines and attempt
     if i == 5:
         print("No Lifelines remaining")
