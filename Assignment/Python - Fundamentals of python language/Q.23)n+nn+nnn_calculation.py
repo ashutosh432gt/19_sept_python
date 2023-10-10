@@ -2,11 +2,14 @@
 #n+nn+nnn.
 
 n=int(input("Enter any Integer :- "))
-#applying calculation to find n+nn+nnn
-#if we multiply any number with 1 it remains same for example 2*1=2
-#as we can see nn is two digit number so we multiplied it with 11 same way for triple digit
-nn=n*11
-nnn=n*111
-total=n+nn+nnn
+#convertng integer into string
+a=str(n)
+b=a+a   
+c=a+a+a
+#converting string into integer     
+x=int(a)
+y=int(b)
+z=int(c)
+total=x+y+z
 
-print("{} + {} + {} = {}".format(n,nn,nnn,total))
+print("{} + {} + {} = {}".format(x,y,z,total))
