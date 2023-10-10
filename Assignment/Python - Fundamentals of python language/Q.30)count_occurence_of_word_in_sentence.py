@@ -3,7 +3,7 @@
 
 sentence=input("Enter a sentence :- ")
 word=input("Enter a Word to count its occurence in a sentence :- ")
-#using count method to count how many times substring occuered in a string
+#using count method to count how many times word occuered in a sentence
 count=sentence.count(word)
 
 print("{} occurs {} times in the given sentence".format(word,count))

@@ -20,8 +20,7 @@ for word in word_list:
         longest_length = length
         longest_word = word
 
-#Applying condition to find longest word and length 
-if longest_length > 0:
-    print("Longest Length = ",longest_length)
-    print("longest word = ",longest_word)
+
+print("Longest Length = ",longest_length)
+print("longest word = ",longest_word)
 
