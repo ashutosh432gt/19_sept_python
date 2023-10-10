@@ -81,3 +81,4 @@ print(name.isdigit)
 name="45asgdah"
 print(name.isdigit)
 print(name.isalnum)'''
+

@@ -1,4 +1,4 @@
-import sys
+import sys    #importing system information 
 
 print("Python Version:")
 print(sys.version)

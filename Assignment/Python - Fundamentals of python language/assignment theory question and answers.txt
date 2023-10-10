@@ -78,7 +78,81 @@ answer--->a namespace in Python is a container that holds a collection of names 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q.14)What is the purpose continue statement in python?
-answer--->In short, the `continue` statement in Python is used to skip the current iteration of a loop and proceed to the next iteration. It allows you to bypass specific code within the loop based on conditions, enabling you to control the flow of your loop.
+answer--->the `continue` statement in Python is used to skip the current iteration of a loop and proceed to the next iteration. It allows you to bypass specific code within the loop based on conditions, enabling you to control the flow of your loop.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q.19)What are the tools that help to find bugs or perform static analysis?
+answer--->Certainly, here are some popular tools and libraries commonly used for finding bugs and performing static analysis in Python:
+
+1. **pylint**: A widely used static code analyzer that enforces coding standards, checks for code style, and identifies potential errors in Python code.
+
+2. **flake8**: Combines multiple tools like `pyflakes`, `mccabe`, and `pep8` to provide code linting and style checking for Python code.
+
+3. **Bandit**: A security-focused static analyzer that scans Python code for security vulnerabilities, such as SQL injection, XSS, and more.
+
+4. **Mypy**: A static type checker for Python that helps catch type-related errors and improve code quality by adding type annotations to your code.
+
+5. **pyright**: A static type checker and language server for Python that integrates well with Visual Studio Code.
+
+6. **Black**: An opinionated code formatter for Python that automatically formats your code to adhere to a consistent style.
+
+7. **Radon**: A tool that computes code metrics, including cyclomatic complexity and maintainability index, to assess code quality.
+
+8. **Coverage.py**: A tool for measuring code coverage during testing, helping you identify untested or poorly tested parts of your code.
+
+9. **Safety**: Checks your project's dependencies for known security vulnerabilities and provides alerts for potential issues.
+
+10. **pyt: A security testing framework that helps automate vulnerability scanning and security testing for Python applications.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q.20)What are Python decorators?
+answer---->In Python, decorators are a powerful and flexible way to modify or extend the behavior of functions or methods without changing their source code. Decorators are often used for tasks like logging, authorization, memoization, and more. They are implemented using functions and the "@" symbol to apply them to other functions or methods.
+
+Here's a basic explanation of Python decorators:
+
+Functions as First-Class Objects: In Python, functions are first-class objects, which means they can be assigned to variables, passed as arguments to other functions, and returned from other functions.
+
+Nested Functions: Python allows you to define functions inside other functions. These nested functions are sometimes called inner functions or closures.
+
+Decorator Functions: A decorator is essentially a function that takes another function as its argument and returns a new function that usually extends or modifies the behavior of the original function. This concept is often used to add functionality to functions or methods without altering their core logic.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q.21)What is PEP 8?
+answer--->PEP 8, which stands for "Python Enhancement Proposal 8," is the style guide for writing Python code. It provides a set of conventions and guidelines to ensure consistency and readability in Python code. PEP 8 was authored by Guido van Rossum, the creator of Python, and has become the de facto standard for Python code style.
+
+PEP 8 covers various aspects of code formatting and style, including:
+
+1. **Indentation**: It recommends using 4 spaces for each level of indentation. Tabs are discouraged for indentation.
+
+2. **Whitespace**: PEP 8 defines guidelines for the use of whitespace, such as using spaces around operators and after commas. It also recommends avoiding trailing whitespace.
+
+3. **Imports**: It provides guidelines for organizing and formatting import statements. Import statements should generally be at the top of the file and should be grouped in a specific order.
+
+4. **Whitespace in Expressions and Statements**: PEP 8 specifies how to use whitespace in various expressions and statements, such as adding spaces around binary operators and using whitespace to improve readability.
+
+5. **Comments**: It offers recommendations for writing comments, including using docstrings for documenting functions, classes, and modules.
+
+6. **Naming Conventions**: PEP 8 defines naming conventions for variables, functions, classes, and modules. For example, variable names should be lowercase with words separated by underscores (snake_case), and class names should use CamelCase.
+
+7. **Maximum Line Length**: It suggests keeping lines of code to a maximum of 79 characters in length for code and 72 characters for comments and docstrings, although many developers and tools now use a maximum line length of 80 or 88 characters.
+
+8. **Function and Method Signatures**: PEP 8 provides guidelines for formatting function and method signatures, including the use of whitespace around arguments and return annotations.
+
+9. **Whitespace in Slice Notation**: It recommends using no spaces when specifying slices in indexing, such as `my_list[1:3]` instead of `my_list[1 : 3]`.
+
+10. **Imports Formatting**: It provides guidelines for formatting multi-line import statements and aligning import statements in a consistent manner.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q.29)What are negative indexes and why are they used?
+answer--->Negative indexes in programming allow you to access elements in a sequence, like a list or string, from the end, simplifying code and making it more readable. They are particularly useful when you need to work with the last few elements or when the length of the sequence is unknown or variable. Negative indexes count backward from the end, with -1 representing the last element, -2 representing the second-to-last element, and so on.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
 
