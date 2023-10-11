@@ -5,8 +5,8 @@ sum=0
 #applying loop to run and print counting upto user given integers
 for i in range(1,n+1):
     print(i)
-    #applying condition to fin positive integers
-    if i%2==0:
+    #applying condition to find positive integers
+    if i>0:
         sum+=i
 print()        
 print("Sum of positive integers = ",sum)        

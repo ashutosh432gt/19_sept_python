@@ -5,8 +5,9 @@ a=0
 b=1
 print(a)
 print(b) 
-
+#applying for loop to perform calculation in a sequence 
 for i in range (2,num):
+    #logic for calculating fibanocci series
     num=a+b
     print(num)
     a,b=b,num
