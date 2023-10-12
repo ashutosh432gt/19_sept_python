@@ -2,9 +2,9 @@
 # 'not' and 'poor' from a given string, if 'not' follows the 'poor', replace the 
 # whole 'not'...'poor' substring with 'good'. Return the resulting string.
 
-str=input("enter your string:")
+str=input("enter your string : ")
 
-if str.startswith("not poor"):
+if "not poor" in str:
     str1=str.replace("not poor","good").lower() # it will replace "not poor" with "good"
     print(str1)
 
