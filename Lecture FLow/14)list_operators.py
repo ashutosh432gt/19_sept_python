@@ -78,6 +78,47 @@ l1=[1,2,3,4,5,6,7]
 l1.insert(2,10001)
 
 print(l1)
+
+#searching list
+
+l1=["apple","mango","banana"]
+
+for i in l1:
+    print(i)
+    
+fruit_name=input("Enter fruit")
+
+if fruit_name in l1:
+    print("yes,it is available")
+else:
+    print("no,its not available")  
+    
+    
+#to fetch unique values in list
+
+l1=[23,45,67,2,8,23,2]
+
+l2=[]
+
+for in in l1:
+    if i not in l2:
+        l2.append(i)
+        
+print(l2)   
+
+#two list comparision
+
+l1=["tv","mobile","fridge"]
+l2=["25000","15000","45000"]
+
+name= input("Enter product name :- ")
+index_number=l1.index(name)
+print(index_number)
+price_value=l2[index_number]
+print(f"{name} = Rs.{price_value}")     
+
+
+##project          
 """
 
 

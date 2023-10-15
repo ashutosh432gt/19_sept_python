@@ -1,0 +1,4 @@
+
+Q.1)What is List?How will you reverse a list?
+answer---> List is a collection of datatype which is mutable(changeable) , indexable,orderable and it is represented by list []
+to reverse the loop we can 
