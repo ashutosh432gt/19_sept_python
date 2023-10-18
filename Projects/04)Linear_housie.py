@@ -35,5 +35,4 @@ while True:
         #applying conditional statement if computer generated list has no numbers lefts
         if not Anjali_Mam:
             print("Anjali_Mam wins")
-            break 
-        
+            break   
