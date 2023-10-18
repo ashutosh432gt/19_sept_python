@@ -14,25 +14,31 @@ print(f"{name} numbers = {user}")
 
 status=True
 #while condition to validate entry and generate random numbers multiple times
-while True:
+while status:
     com = random.randint(1, 12)
     print()
     print("Random number picked = ",com)
     #applying condtional statement to check and remove numbers from the list
     if com in user:
         user.remove(com)
-    
+        
         print(f"{name} has {com} \n{name} remaining numbers: {user}")
         #applying conditional statement if user list has no numbers lefts
         if not user:
             print("User wins")
             break
 
-    if com in Anjali_Mam:
-        Anjali_Mam.remove(com)
+        if com in Anjali_Mam:
+            Anjali_Mam.remove(com)
 
         print(f"Anjali_Mam has {com} \nAnjali_Mam's remaining numbers: {Anjali_Mam}")
-        #applying conditional statement if computer generated list has no numbers lefts
+            #applying conditional statement if computer generated list has no numbers lefts
         if not Anjali_Mam:
             print("Anjali_Mam wins")
-            break   
+            break  
+        
+        
+    input()
+              
+   
+        
