@@ -23,7 +23,7 @@ print(student)'''
 
 #Example 2 quiz
 
-quiz = {
+'''quiz = {
     1 : {
         "que" : "Who is prime minister of india ?",
         "ans" : "Narendra Modi",
@@ -51,7 +51,7 @@ for i in range(1,len(quiz)+1):
         score+=50
     else:
         print("Wrong answer")
-        score-=20        
+        score-=20      '''  
 
 #Example 3
 
@@ -68,3 +68,5 @@ for v in student.values():
     print(v)    
     
 print(len(student.keys()))  '''
+
+
