@@ -28,14 +28,13 @@ while status:
             print("User wins")
             break
 
-        if com in Anjali_Mam:
+    elif com in Anjali_Mam:
             Anjali_Mam.remove(com)
-
-        print(f"Anjali_Mam has {com} \nAnjali_Mam's remaining numbers: {Anjali_Mam}")
+            print(f"Anjali_Mam has {com} \nAnjali_Mam's remaining numbers: {Anjali_Mam}")
             #applying conditional statement if computer generated list has no numbers lefts
-        if not Anjali_Mam:
-            print("Anjali_Mam wins")
-            break  
+            if not Anjali_Mam:
+                print("Anjali_Mam wins")
+                break  
         
         
     input()
