@@ -17,9 +17,9 @@ status=True
 while status:
     com = random.randint(1, 12)
     print()
-    print("Random number picked = ",com)
     #applying condtional statement to check and remove numbers from the list
     if com in user:
+        print("Random number picked = ",com)
         user.remove(com)
         
         print(f"{name} has {com} \n{name} remaining numbers: {user}")
@@ -29,13 +29,16 @@ while status:
             break
 
     elif com in Anjali_Mam:
+            print("Random number picked = ",com)
             Anjali_Mam.remove(com)
+            
             print(f"Anjali_Mam has {com} \nAnjali_Mam's remaining numbers: {Anjali_Mam}")
             #applying conditional statement if computer generated list has no numbers lefts
             if not Anjali_Mam:
                 print("Anjali_Mam wins")
                 break  
-        
+    else:
+        print(f"The Number {com} is alredy picked : Press Enter to pick random number again")            
         
     input()
               
