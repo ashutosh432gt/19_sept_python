@@ -33,7 +33,7 @@ while flag:
             print("Products = ", products)
 
             choice = input("Do you want to add more products? (yes/no): ").lower()
-            if choice == 'yes':
+            if choice == "yes" or choice == "y":
                 status = True
             else:
                 status = False
@@ -65,7 +65,7 @@ while flag:
                     total_bill += item_cost
 
                 choice = input("Do you want to add more items to the cart? (yes/no): ").lower()
-                if choice == 'yes':
+                if choice == "yes" or choice == "y":
                     status = True
                 else:
                     status = False
@@ -76,7 +76,7 @@ while flag:
         for item, details in cart.items():
             print(f"{details['Product_Name']} - Quantity: {details['Quantity']}")
         
-        print(cart)
+        
         print(f"Total Bill: INR {total_bill}")  # Display the total bill
 
         
