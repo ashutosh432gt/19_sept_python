@@ -1,0 +1,5 @@
+Q.1).What is tuple?Difference between list and tuple.
+answer----->Tuple()===>>>a tuple is an ordered collection of elements enclosed in parentheses, and it is immutable, meaning you cannot change its contents once created. 
+List===>>> A list, on the other hand, is an ordered collection enclosed in square brackets and is mutable, allowing you to modify its contents after creation. 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,43 @@
+
+Q.1)What is List?How will you reverse a list?
+answer---> a list is an ordered collection of elements, and these elements can be of different data types, including numbers, strings, or even other lists. Lists are defined using square brackets [ ] and can be modified, appended to, or extended with new elements.
+We can use multiple method to reverse the string such as :
+
+1.Using slicing :
+		example :- 
+			   my_list = [1, 2, 3, 4, 5]
+			   reversed_list = my_list[::-1]
+			   print(reversed_list)
+
+2.Using the reverse () method :
+		example :- 
+			   my_list = [1, 2, 3, 4, 5]
+			   my_list.reverse()
+			   print(my_list)
+
+3.Using the reversed () function :
+		example :- 
+			   my_list = [1, 2, 3, 4, 5]
+			   reversed_list = list(reversed(my_list))
+			   print(reversed_list)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.2)How will you remove last object from a list?
+answer---->we can remove last object from a list using pop()method
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q.3)Suppose list1 is [2, 33, 222, 14, 25], What is list1[-1] ?
+answer--->list1[-1] = 25
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.4)4.Differentiate between append() and extend() methods.?
+answer---->append() = adds a single element to the end of a list.
+	   extend() = adds all the elements from another iterable to the end of a list.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.6)How will you compare two lists?
+answer----->Use the == operator to check if they have the same elements in the same order.
+	    Use set operations if you want to check for subsets, supersets, or find the differences between the lists.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
