@@ -1,0 +1,34 @@
+Q.1)What is Dictionaries?
+ans--->A dictionary in Python is an unordered collection of data in a key-value pair format. Each entry in a dictionary is made up of a key and its associated value. Dictionaries are also sometimes referred to as associative arrays, hash maps, or hash tables in other programming languages. Here are some key characteristics of dictionaries in Python:
+
+Unordered: Unlike lists or tuples, dictionaries have no specific order for their elements. The elements are not indexed by numerical positions, but rather by their keys.
+
+Mutable: Dictionaries are mutable, which means you can add, modify, or remove key-value pairs after creating a dictionary.
+
+Keys: Keys in a dictionary are unique, meaning each key can only appear once within a dictionary. If you attempt to add a duplicate key, the new value will simply overwrite the existing value associated with that key.
+
+Data Types: Keys in a dictionary can be of any hashable data type (e.g., strings, integers, and some other immutable types), while values can be of any data type (including other dictionaries or complex objects)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.2)How will you create a dictionary in python?How will you get all the keys from the
+dictionary?How will you get all the values from the dictionary?
+ans--->To create a dictionary in Python we use curly braces `{}` and specify key-value pairs.
+
+						my_dict = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
+
+
+To get all the keys from a dictionary,use the `keys()` method:
+
+								all_keys = my_dict.keys()
+
+To get all the values from a dictionary,use the `values()` method:
+
+							      all_values = my_dict.values()
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.4)How will you create a dictionary using tuples in python?
+ans---->To create a dictionary using tuples in Python,use the dict() constructor with a list of key-value pairs where each pair is represented as a tuple. Here's how to do it:
+				key_value_tuples = [('key1', 'value1'), ('key2', 'value2'), ('key3', 'value3')]
+				my_dict = dict(key_value_tuples)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
