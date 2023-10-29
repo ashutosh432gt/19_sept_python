@@ -11,7 +11,7 @@ print("Original List :- ",list1)
 #changing list into set
 set= set(list1)
 
-#list to set
+#set to list
 unique_list=list(set)
 
 print("Unique List :- ",unique_list)

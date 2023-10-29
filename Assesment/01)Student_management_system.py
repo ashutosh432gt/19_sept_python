@@ -29,16 +29,17 @@ while status:
             subject=input("Enter Subject :- ")
             marks=int(input("Enter Marks :- "))
             fees=int(input("Enter Fees :- "))
-            
+            phone=int(input("Enter Student Contact Number : -"))
             students[serial_number] = {
                 'First Name': fname,
                 'Last Name': lname,
                 'Subject': subject,
                 'Marks': marks,
+                'phone' : phone,
                 'Fees': fees
             }
             
-            option=input("Do you want to add more students :Enter yes to add orlese enter No :- ").lower()
+            option=input("Do you want to add more students :Enter yes to add or else enter No :- ").lower()
             if option=="yes" or option=="y":
                 status=True
                 
@@ -78,7 +79,7 @@ while status:
         elif choice==2:
             print(students)    
         else:
-            print("Inavlid serial number")  
+            print("Invalid serial number")  
               
     elif choice==3:        
         stu="""
@@ -97,7 +98,7 @@ while status:
             query=input("Enter Your Query :- ")
             print("Your Query submitted successfully")
         else:
-            print("Inavlid choice")
+            print("Invalid choice")
             
     else:
         print("Invalid Input")   

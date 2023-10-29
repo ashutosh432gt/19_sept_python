@@ -1,4 +1,4 @@
-side=int(input("Enter side of the sqaure :- "))
+side=int(input("Enter side of the square :- "))
 
 area=side*side
 

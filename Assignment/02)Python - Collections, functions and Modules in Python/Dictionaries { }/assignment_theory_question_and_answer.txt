@@ -31,4 +31,56 @@ ans---->To create a dictionary using tuples in Python,use the dict() constructor
 				my_dict = dict(key_value_tuples)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.8)How Do You Traverse Through A Dictionary Object In Python?
+ans-->To iterate a dictionary using a specified order, use Python's sorted() method. The item will initially be sorted before being traversed through by a for a loop. Dictionary keys are sorted by the function sorted(dictionary. keys()), and for iterates through the keys that were returned. 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.9).How Do You Check The Presence Of A Key In A Dictionary?
+ans--->Check If Key Exists using get()
+      Using the Inbuilt method get() method returns a list of available keys in the dictionary.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.16)Why Do You Use The Zip() Method In Python?
+ans--->The `zip()` function in Python is used to combine multiple iterables (e.g., lists, tuples, or other sequences) into a single iterable. It pairs up elements from each input iterable into tuples, and it continues until the shortest input iterable is exhausted. This is useful in a variety of situations, and here are a few common use cases:
+
+1. **Iterating Over Multiple Lists in Parallel:** You can use `zip()` to iterate over multiple lists in parallel, processing elements from each list at the same position together. For example:
+
+python
+names = ["Alice", "Bob", "Charlie"]
+scores = [90, 88, 76]
+
+for name, score in zip(names, scores):
+    print(f"{name}: {score} points")
+
+
+This code combines the `names` and `scores` lists into pairs and iterates through them together, allowing you to print the names and corresponding scores.
+
+2. **Creating Dictionaries:** You can use `zip()` to create dictionaries from two lists, where one list contains keys and the other contains values:
+
+python
+keys = ["a", "b", "c"]
+values = [1, 2, 3]
+
+my_dict = dict(zip(keys, values))
+# Result: {'a': 1, 'b': 2, 'c': 3}
+
+
+3. **Unzipping:** You can also use `zip()` to unzip a list of tuples into separate lists. To do this, you can apply the `zip()` function with the `*` operator to unpack the tuples:
+
+python
+pairs = [(1, 'one'), (2, 'two'), (3, 'three')]
+numbers, words = zip(*pairs)
+# numbers = (1, 2, 3)
+# words = ('one', 'two', 'three')
+
+
+4. **Combining Iterables for Further Processing:** `zip()` can be used to combine multiple iterables for further processing. For example, you might want to combine two lists, perform some operations on the paired elements, and store the results in a new list.
+
+python
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+
+result = [a + b for a, b in zip(list1, list2)]
+# Result: [5, 7, 9]
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
