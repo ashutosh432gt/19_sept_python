@@ -19,5 +19,5 @@ def mydict(**kwargs):
     for k,v in kwargs.items():
         print(f"{k} = {v}")
         
-mydict(name="AAA",subects="Python")        
+mydict(name="AAA",subjects="Python")        
      
