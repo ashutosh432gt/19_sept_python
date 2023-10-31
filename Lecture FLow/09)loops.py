@@ -1,4 +1,4 @@
-#loops => to excute a statement repeatedly
+#loops => to execute a statement repeatedly
 #types of loops
 #1)for loop -Sequence controlled loop
 #range()- to find the range between the numbers. range(starting range,ending range,jump)
@@ -44,7 +44,7 @@ for i in range (1,a+1):
     
 print(sum) '''   
 
-#example 8 sum of even and odd numbers seperatly
+#example 8 sum of even and odd numbers separately
 
 '''a=int(input("Enter a number :-"))
 e_sum=0
@@ -125,7 +125,7 @@ print("Odd sum : ",o_sum)    '''
 #While loop - entry controlled loop
 #syntax:-
 
-'''initlization
+'''initialization
    while condition
      statement
      updation                    
@@ -134,7 +134,7 @@ print("Odd sum : ",o_sum)    '''
     
 #example 1    
 
-'''i=1 #intitlization
+'''i=1 #initialization
 while i<=5: #condition
     print(i)
     i+=1 #updation'''

@@ -1,7 +1,7 @@
 """
 There are four types of collection
 
-1)List :- list is a colletion of datatype
+1)List :- list is a collection of datatype
           list which is mutable (changeable)
           list which is indexable,orderable
           

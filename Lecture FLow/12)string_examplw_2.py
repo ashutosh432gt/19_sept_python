@@ -1,6 +1,6 @@
 #example 1 email validation
 
-'''email=input("Enter ypur email :- ")
+'''email=input("Enter your email :- ")
 
 if email.endswith(".com"):
     print("valid email")
@@ -26,7 +26,7 @@ else:
 print(s1)
 print(s1[0])
 print(s1[-1])
-print(s1[2:4]) '''    #string slicing [note:- it ignores last chracter]   
+print(s1[2:4]) '''    #string slicing [note:- it ignores last character]   
 
 
 #example 1
@@ -54,15 +54,15 @@ print("len ",count) '''
 '''s1="hello"
 s2="welcome"
 
-#fetch starting two chracters from string
+#fetch starting two characters from string
 print(s1[:2])
-#fetch last two chracters from string
+#fetch last two characters from string
 print(s2[-2:])
 print(s1[-2:-1])
 
 s3=s1 + s2 [-2:]
 print(s3)
-#cocantenation
+#concatenation
 s3= s1[:2] + "good" + s2 [-2:]
 print(s3)'''
 

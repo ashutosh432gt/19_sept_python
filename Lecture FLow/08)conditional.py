@@ -14,7 +14,7 @@ if marks>70:  #condition
         print("You will get a car")  #true statement        
         
 2)If else statement :-
-    if condtion:        
+    if condition:        
         True statement
     
     else:
@@ -39,7 +39,7 @@ else:
 name & age
 
 name=(input("Enter your name :- "))
-age=int(input("Enter ypur age :-"))
+age=int(input("Enter your age :-"))
 
 if age>18:
         print("You can not marry")
@@ -49,7 +49,7 @@ else:
         
 3) elif statement or elif ladder :- 
 
-if condtion:        
+if condition:        
         statement
 
 elif condition:

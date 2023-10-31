@@ -34,7 +34,7 @@ remove operation - methods
             
             syntax: list.clear()
             
-   =>>>>>completly delete list from the memory
+   =>>>>>completely delete list from the memory
    
         using of del keyword
    
@@ -106,7 +106,7 @@ for in in l1:
         
 print(l2)   
 
-#two list comparision
+#two list comparison
 
 l1=["tv","mobile","fridge"]
 l2=["25000","15000","45000"]

@@ -29,7 +29,7 @@ print(count)   '''
 print(t[0])'''
 
 #tuple modification
-#tuple cannnot be changed it's immutable
+#tuple cannot be changed it's immutable
 t=(10,20,30,40)
 
 #converting tuple to list

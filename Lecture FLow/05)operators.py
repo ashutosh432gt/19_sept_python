@@ -2,11 +2,11 @@
 # for example a+b,here a and b are operands and + is operator.
 #types of operators
 
-# 1.Artithmetic operators :-
+# 1.Arithmetic operators :-
 #+ ------> addition
 #- ------> substraction
 #* -----> multiplication
-#/ ----> divison
+#/ ----> division
 #% -----> modulo reminder
 
 #a=10
@@ -17,7 +17,7 @@
 #2.Assignment Operators
 # = ----> Equal to     x=3
 # += -----> Add equal to    x+=3 ----. x=x+3
-# -= -----> Substract equal to x-=2 ----> x=x-2
+# -= -----> Subtract equal to x-=2 ----> x=x-2
 # *= -----> Multiply equal to x*=4 -----> x=x*4
 # /= -----> Divide equal to   x/=4 ------> x=x/4
 # %= -----> modular equal to  x%=5 -------> x=x%5
@@ -30,7 +30,7 @@
 # 3.Relational Operators
 # == -------> equal to ------> x==0
 # <= -------> lesser or equal to ------> x<=5
-# >= -------> greater or equall to ------> x>=6
+# >= -------> greater or equal to ------> x>=6
 # <  -------> lesser --------> x<5
 # >  -------> greater -------> x>4
 # != -------> not equal to -------> x!=3

@@ -1,7 +1,7 @@
 """
-set :- set is a collection data type which contain unique elements set which reprsent by {}
+set :- set is a collection data type which contain unique elements set which represent by {}
 
-    set which is unorderable,unindexable,unsequenced
+    set which is orderable,unindexable,unsequenced
     
     s={}
     """

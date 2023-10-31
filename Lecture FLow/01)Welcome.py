@@ -24,5 +24,5 @@ print(r"\tHello")
 # print("Hello",end=" ")
 # print("How are you")
 
-#Seprate
+#Separate
 # print("Hello", "and", "welcome","tops",sep="$")
