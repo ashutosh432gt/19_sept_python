@@ -1,5 +1,5 @@
 """
-funtcion : function is a bloc of code are used  again and again
+function : function is a bloc of code are used  again and again
 
             using of function we can reduce our code
             and reuse our code
@@ -13,11 +13,11 @@ funtcion : function is a bloc of code are used  again and again
 
 there are three steps to implement function
 
-step 1: function declration // which is use in c programming
-step 2: function defination
+step 1: function declaration // which is use in c programming
+step 2: function definition
 step 3: function calling
 
-function defination syntax :
+function definition syntax :
                 // bloc of code
                 
 function calling syntax :
@@ -30,7 +30,7 @@ def greetings(): # function define
 greetings() #function calling  '''     
 
 
-function cateogories
+function categories
     there are 4 types of categories
     
     1)function without parameter and function without return type 
