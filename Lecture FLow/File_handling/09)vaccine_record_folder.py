@@ -1,7 +1,7 @@
 import os
 from datetime import datetime
-
-os.mkdir("Vaccination Database")
+if not os.path.exists("Vaccination Database"):
+    os.mkdir("Vaccination Database")
 status = True
 
 while status:

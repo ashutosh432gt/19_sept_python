@@ -1,0 +1,19 @@
+oops : object oriented programming system
+
+oop which based on below concepts
+
+1)Class
+2)object
+3)Encapsulation
+4)Inheritance
+5)Polymorphism
+6)Abstraction
+7)Aggregation
+
+=>class : class is a userdefined data type
+            which contain data member and member function
+
+=>object : object is an instance or a variable of a class
+           using of object we can access properties of class
+
+=>Encapsulation : Encapsulation is a process of wrapping the data and
