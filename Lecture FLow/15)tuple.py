@@ -7,7 +7,7 @@ tuple :- tuple is a collection data type
          t=()
     """
 #example 1 length and count
-'''t=()
+'''t=()     
 print(t)
 
 t=(1,2,3,4,6)

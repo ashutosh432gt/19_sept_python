@@ -1,0 +1,19 @@
+html : html stands for hyper text markup language
+
+    using of html we can create any webpage or we can build any webpage structure.
+now, html which contain lots of tags
+
+there are two types of tags
+
+1)singular tag
+2)paired tags
+
+-----------------------------------------
+1)there are only three singular tags
+        <hr>
+        <br>
+        <img>
+
+    except these three tags all are paired tags
+
+2)paired tags:which comes with opening and closing braces        

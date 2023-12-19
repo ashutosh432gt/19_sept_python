@@ -5,11 +5,11 @@ function : function is a bloc of code are used  again and again
             and reuse our code
             function provide clean and clear coding
             
-// types of function
+types of function
 1)built-in function : () --- print() , input (), len()......
 2)user-defined function : function which is defined by user
 
-// how we can define or use function or how to implement function
+how we can define or use function or how to implement function
 
 there are three steps to implement function
 
@@ -18,7 +18,7 @@ step 2: function definition
 step 3: function calling
 
 function definition syntax :
-                // bloc of code
+                 bloc of code
                 
 function calling syntax :
 

@@ -1,0 +1,5 @@
+What is pip ?
+
+Pip is a package management system used to install and manage software packages written in python
+
+many packages can be found in the deafault source for packages and thier dependcies - python package Index.

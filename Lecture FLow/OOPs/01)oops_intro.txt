@@ -16,4 +16,17 @@ oop which based on below concepts
 =>object : object is an instance or a variable of a class
            using of object we can access properties of class
 
-=>Encapsulation : Encapsulation is a process of wrapping the data and
+=>Encapsulation : Encapsulation is a process of wrapping the data and 
+                  methods of a class in a single unit
+
+=>Inheritance : Inheritance is a process of creating a new class by 
+               using the properties and methods of existing class
+
+=>Polymorphism : Polymorphism is a process of using same name for different 
+                 objects
+
+=>Abstraction : Abstraction is a process of removing the unnecessary details
+               from a class and showing only the essential details
+
+=>Aggregation : Aggregation is a process of combining two classes into a 
+               single class

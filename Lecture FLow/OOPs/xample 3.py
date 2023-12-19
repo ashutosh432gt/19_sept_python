@@ -9,6 +9,6 @@ class Student:
     def __init__(self) -> None:
         print("Welcome to the tops technologies")
         
-        
+#object creation        
 student1=Student()
 student2=Student()            
