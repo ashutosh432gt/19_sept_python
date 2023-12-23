@@ -1,0 +1,48 @@
+To create A Folder ---mkdir Folder_name
+to install virtual environment --- pip install virtualenv
+pip -->python index package
+to create Environment -- python -m venv env_name
+to go inside the environment or change directory - cd .\env_name\
+to start the or activate the environment - .\Scripts\activate
+
+to install django -- pip install django
+
+to start project -django-admin startproject project_name 
+to create application first we have to go inside the project-- cd .\project_name\
+
+to create app - python .\manage.py startapp app_name
+
+to run -- python .\manage.py runserver 
+
+
+using python inbuilt ---- python manage.py migrate
+
+to check its working or not we will add \admin to link
+http://127.0.0.1:8000/admin
+
+to verify or add user login details -- python .\manage.py createsuperuser user_name
+
+
+
+Go in digitalsociety project file
+then settings.py
+add created application name in it
+
+Django follows MVT architecture
+
+M:Model (html,database)
+V:View (business logics -- pure python code)
+T:Templates (html files)
+
+To modify url we can go in urls.py
+then we can replace the name in the path
+
+Settings.py (entrypoint)
+|
+url.py (projectlevel)
+             |-> Views
+		   |->Html Page
+			 |
+		   click on about --> urls.py(app)
+				    view<-|
+url.py(projectlevel)
