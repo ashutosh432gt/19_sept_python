@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class ChairmanConfig(AppConfig):
+class ChairmanappConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'chairman'
+    name = 'chairmanapp'
