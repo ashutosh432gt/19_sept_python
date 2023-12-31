@@ -1,0 +1,6 @@
+What is python ?
+Python is object oriented,high level,interpreted programming language.
+
+who developed python?
+Guido van rossum 
+
