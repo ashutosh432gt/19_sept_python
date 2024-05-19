@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .search-form {
+            margin-bottom: 20px;
+        }
+        .table img {
+            max-width: 100px;
+            max-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-4">Product Management System</h1>
+
+        
+        <form class="search-form form-inline" id="search-form">
+            <input type="text" class="form-control mr-2" name="query" placeholder="Search for products" value="{{ request.GET.query }}">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+
+        <h2>All Products</h2>
+        <div id="product-table">
+            <table class="table table-bordered table-hover">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Model</th>
+                        <th>RAM</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for product in products %}
+                    <tr>
+                        <td>{{ product.name }}</td>
+                        <td>${{ product.price }}</td>
+                        <td>{{ product.model }}</td>
+                        <td>{{ product.ram }}</td>
+                        <td>
+                            {% if product.image %}
+                            <img src="{{ product.image.url }}" class="img-thumbnail">
+                            {% else %}
+                            No Image Available
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% if not products %}
+        <div class="alert alert-info" role="alert">
+            No products found.
+        </div>
+        {% endif %}
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#search-form').on('submit', function(event) {
+                event.preventDefault();
+                $.ajax({
+                    url: '',
+                    type: 'GET',
+                    data: $(this).serialize(),
+                    success: function(data) {
+                        $('#product-table').html($(data).find('#product-table').html());
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Assignment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        section h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        section p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        section ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+        section ul li {
+            background: #eee;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-left: 5px solid #333;
+            border-radius: 5px;
+        }
+        section ul li strong {
+            color: #333;
+        }
+        dl {
+            padding: 0;
+        }
+        dt {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        .step-img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .code-block {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        .code-block code {
+            color: #f8f8f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Why Django Should Be Used for Web Development?</h1>
+    </header>
+    <section>
+        <h3>Django is a high-level Python web framework that promotes rapid development and clean, pragmatic design.</h3>
+        <p>Below I have mentioned several reasons why Django should be used for web development:</p>
+        <ul>
+            <li><strong>Comes with Many Tools:</strong> Django includes a lot of built-in features that make web development faster and easier.</li>
+            <li><strong>Secure:</strong> Django helps protect websites from common security problems, like hackers trying to steal data or mess up your site.</li>
+            <li><strong>Handles Big Sites:</strong> Django can manage websites with lots of visitors and data. Many big websites use Django because it can grow with them.</li>
+            <li><strong>Flexible:</strong> You can use Django to build many different types of websites, from simple blogs to complex e-commerce websites.</li>
+            <li><strong>Large Community:</strong> Django has a large community of users, so there are many tutorials, guides, and packages available to help you.</li>
+            <li><strong>Fast Development:</strong> Django helps you to build websites quickly by reusing parts and writing less code.</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Creating A Django Project</h3>
+        <dl>
+            <dt><strong>Step 1: Install Virtualenv</strong></dt>
+            <dd>Open your command line or terminal and run:</dd>
+            <dd class="code-block"><code>pip install virtualenv</code></dd>
+            <dt><strong>Step 2: Create a Virtual Environment</strong></dt>
+            <dd>Navigate to your project directory and run:</dd>
+            <dd class="code-block"><code>virtualenv environment_name</code></dd>
+            <dt><strong>Step 3: Activate the Virtual Environment</strong></dt>
+            <dd>Activate the virtual environment:</dd>
+            <dd class="code-block">
+                <code>.\env\Scripts\activate</code> <small>(Windows)</small><br>
+            </dd>
+            <dt><strong>Step 4: Install Django</strong></dt>
+            <dd>With the virtual environment activated, install Django:</dd>
+            <dd class="code-block"><code>pip install django</code></dd>
+            <dt><strong>Step 5: Create a Django Project</strong></dt>
+            <dd>Create a new Django project by running:</dd>
+            <dd class="code-block"><code>django-admin startproject myproject</code></dd>
+            <dt><strong>Step 6: Navigate to the Project Directory</strong></dt>
+            <dd>Change to your project directory:</dd>
+            <dd class="code-block"><code>cd myproject</code></dd>
+            <dt><strong>Step 7: Start the Development Server</strong></dt>
+            <dd>Run the development server to check your setup:</dd>
+            <dd class="code-block"><code>python manage.py runserver</code></dd>
+            <dt><strong>Step 8: Create a Django App</strong></dt>
+            <dd>Create a new app within your project:</dd>
+            <dd class="code-block"><code>python manage.py startapp myapp</code></dd>
+            <dt><strong>Step 9: Add the App to the Project</strong></dt>
+            <dd>In <code>myproject/settings.py</code>, add <code>'myapp'</code> to the <code>INSTALLED_APPS</code> list:</dd>
+            <dd class="code-block"><code>INSTALLED_APPS = ['myapp', ...]</code></dd>
+            <dt><strong>Step 10: Define a Model</strong></dt>
+            <dd>In <code>myapp/models.py</code>, create a simple model:</dd>
+            <dd class="code-block">
+                <code>
+                    from django.db import models<br><br>
+                    class Post(models.Model):<br>
+                    &nbsp;&nbsp;&nbsp;title = models.CharField(max_length=100)<br>
+                    &nbsp;&nbsp;&nbsp;content = models.TextField()<br>
+                    &nbsp;&nbsp;&nbsp;created_at = models.DateTimeField(auto_now_add=True)<br><br>
+                    &nbsp;&nbsp;&nbsp;def __str__(self):<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self.title
+                </code>
+            </dd>
+            <dt><strong>Step 11: Make and Apply Migrations</strong></dt>
+            <dd>Create and apply the initial migration:</dd>
+            <dd class="code-block"><code>python manage.py makemigrations</code></dd>
+            <dd class="code-block"><code>python manage.py migrate</code></dd>
+            <dt><strong>Step 12: Create a View and URL</strong></dt>
+            <dd>Create a view in <code>myapp/views.py</code>:</dd>
+            <dd class="code-block">
+                <code>
+                    from django.http import HttpResponse<br><br>
+                    def index(request):<br>
+                    &nbsp;&nbsp;&nbsp;return HttpResponse("Hello, world!")
+                </code>
+            </dd>
+            <dd>Create a file <code>myapp/urls.py</code> and add the URL configuration:</dd>
+            <dd class="code-block">
+                <code>
+                    from django.urls import path<br>
+                    from . import views<br><br>
+                    urlpatterns = [<br>
+                    &nbsp;&nbsp;&nbsp;path('', views.index, name='index'),<br>
+                    ]
+                </code>
+            </dd>
+            <dd>Include this URL configuration in the project's <code>urls.py</code>:</dd>
+            <dd class="code-block">
+                <code>
+                    from django.contrib import admin<br>
+                    from django.urls import include, path<br><br>
+                    urlpatterns = [<br>
+                    &nbsp;&nbsp;&nbsp;path('admin/', admin.site.urls),<br>
+                    &nbsp;&nbsp;&nbsp;path('myapp/', include('myapp.urls')),<br>
+                    ]
+                </code>
+            </dd>
+            <dt><strong>Step 13: Run the Development Server</strong></dt>
+            <dd>Start the server again:</dd>
+            <dd class="code-block"><code>python manage.py runserver</code></dd>
+            <dd>Visit <code>http://127.0.0.1:8000/myapp/</code> in your web browser. You should see "Hello, world!"</dd>
+        </dl>
+    </section>
+</body>
+</html>

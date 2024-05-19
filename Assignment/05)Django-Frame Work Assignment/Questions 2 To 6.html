@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django FAQs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .faq-container {
+            max-width: 800px;
+            width: 100%;
+        }
+        .faq-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .faq-item:hover {
+            transform: translateY(-5px);
+        }
+        .faq-question {
+            color: #343a40;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .faq-answer {
+            display: none;
+            color: #6c757d;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        .faq-answer.active {
+            display: block;
+        }
+        pre {
+            background-color: #f8f9fa;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            padding: 10px;
+            overflow-x: auto;
+        }
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(1)">How to check installed version of Django?</div>
+            <div class="faq-answer" id="answer1">
+                You can check the installed version of Django by running <code>python -m django --version</code> in your command line or terminal.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(2)">What does django-admin.py makemessages command do?</div>
+            <div class="faq-answer" id="answer2">
+                The <code>django-admin.py makemessages</code> command extracts translatable strings from your Django project and generates or updates message files (.po files) for translation purposes.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(3)">What is Django URLs?</div>
+            <div class="faq-answer" id="answer3">
+                Django URLs are patterns that map incoming URLs to views in your Django project. They define how your application responds to different URL patterns.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(4)">Program to create Django URLs:</div>
+            <div class="faq-answer" id="answer4">
+                <pre><code>from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.home, name='home'),
+    path('about/', views.about, name='about'),
+    # Add more URL patterns as needed
+]</code></pre>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(5)">What is a QuerySet?</div>
+            <div class="faq-answer" id="answer5">
+                A QuerySet in Django represents a collection of database queries. It allows you to retrieve, filter, and manipulate data from the database using Python.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(6)">Program to create a new Post object in the database:</div>
+            <div class="faq-answer" id="answer6">
+                <pre><code>from myapp.models import Post
+
+post = Post.objects.create(title='My Post', content='This is the content of my post.')</code></pre>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(7)">Command line to load data into Django?</div>
+            <div class="faq-answer" id="answer7">
+                The <code>python manage.py loaddata</code> command is used to load data fixtures into Django from JSON or YAML files. It loads data into your database.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById('answer' + id);
+            answer.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
